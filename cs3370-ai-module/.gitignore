@@ -1,0 +1,14 @@
+# Compiled binary
+ai_chat
+
+# nlohmann/json header (downloaded at setup, not checked in)
+json.hpp
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
