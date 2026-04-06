@@ -1,0 +1,30 @@
+{
+    "name": "CS 3370 — AI Module (C++)",
+    "image": "mcr.microsoft.com/devcontainers/cpp:1-ubuntu-22.04",
+
+    "features": {
+        "ghcr.io/devcontainers/features/common-utils:2": {}
+    },
+
+    "postCreateCommand": "bash .devcontainer/setup.sh",
+
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "editor.fontSize": 15,
+                "editor.tabSize": 4,
+                "terminal.integrated.defaultProfile.linux": "bash",
+                "C_Cpp.default.cppStandard": "c++17",
+                "C_Cpp.default.compilerPath": "/usr/bin/g++"
+            },
+            "extensions": [
+                "ms-vscode.cpptools",
+                "ms-vscode.cmake-tools"
+            ]
+        }
+    },
+
+    "forwardPorts": [],
+
+    "remoteUser": "vscode"
+}

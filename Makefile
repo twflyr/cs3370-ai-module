@@ -18,6 +18,10 @@ all: $(TARGET)
 $(TARGET): $(SRC) json.hpp
 	$(CXX) $(CXXFLAGS) -o $(TARGET) $(SRC) $(LDFLAGS)
 
+json.hpp:
+	@echo "Downloading json.hpp..."
+	curl -sL -o json.hpp https://github.com/nlohmann/json/releases/latest/download/json.hpp
+
 run: $(TARGET)
 	@echo ""
 	@if [ -z "$$ANTHROPIC_API_KEY" ]; then \
